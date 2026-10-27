@@ -37,7 +37,7 @@ function App() {
                         Selected Work
                     </h2>
                     <p>
-                        Top Projects here;
+                        PICK A FEW
                     </p>
                     <a className="work-link" href="#work">
                         Explore my work!
@@ -239,7 +239,7 @@ function App() {
                         </article>
                         <article className="project-card">
                             <div className="project-image">
-                                <img src="/ooga-booga.png" alt="" className="project-thumbnail"/>
+                                <img src="/refusalofcall.jpg" alt="" className="project-thumbnail"/>
                             </div>
 
                             <div className="project-content">

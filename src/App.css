@@ -231,9 +231,8 @@ h1 {
 }
 
 .work-link {
-    background: #0777b9e1;
-    border: 2px solid #FFFFFF;
-    border-radius: 8px;
+    background: #5624e8cf;
+    border: 2px solid #e2c4ff;
     cursor: pointer;
     padding: 12px 24px;
     display: inline-flex;
@@ -247,6 +246,7 @@ h1 {
     font-size: clamp(1.75rem, 3vw, 2.5rem);
     letter-spacing: -0.035em;
     margin: 0 0 16px;
+    text-decoration: none;
 }
 
 .section {
