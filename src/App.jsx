@@ -1,6 +1,5 @@
 
 import './App.css'
-
 function App() {
     return (
         <>
@@ -12,7 +11,7 @@ function App() {
                     <a href="#about">
                         About
                     </a>
-                    <a href="#contact">
+                    <a href="/contact">
                         Contact
                     </a>
                     <a href="/resume.pdf" target="_blank" rel="noreferrer">
@@ -70,7 +69,7 @@ function App() {
                                     <span className="tag-gold">Pygame</span>
                                 </div>
 
-                                <p>
+                                <p style={{ textAlign: "justify" }}>
                                     A game I made in my undergrad to learn pygame. The game was made entirely in code, using free sprite sheets and basic created images.
                                 </p>
 
@@ -94,12 +93,12 @@ function App() {
                                     <span className="tag-purple">Audio Design</span>
                                 </div>
 
-                                <p>
+                                <p style={{ textAlign: "justify" }}>
                                     Dr. Clueblin, QC is a top-down, grid-based puzzle game where you play a goblin detective searching for his lost sister.
                                 </p>
 
                                 <a href="https://macarenzle.itch.io/dr-clueblin-qc" className="project-link" target="_blank">
-                                    Play it on itch.io!
+                                    Play it on itch.io!↗
                                 </a>
                             </div>
                         </article>
@@ -118,8 +117,9 @@ function App() {
                                     <span className="tag-peach">Prototyping</span>
                                 </div>
 
-                                <p>
-                                     Ooga Booga game where you caveperson and become chief. You chief when have all rock. Rock make head no round. Head round good. Make everyone else head not round and be chief.
+                                <p style={{ textAlign: "justify" }}>
+                                    Ooga Booga game where you caveperson and become chief. You chief when have all rock.
+                                    Rock make head no round. Head round good. Make everyone else head not round and be chief.
                                 </p>
 
                                 <a href="#contact" className="project-link">
@@ -141,15 +141,16 @@ function App() {
                                     <span className="tag-peach">Audio Production</span>
                                 </div>
 
-                                <p>
-                                    WELCOME TO THE FREAKY ZONE !!!111!!11!1! You have so many eager aliens ready to be taken under your care. It's time for you to be an awesome caregiver to these delightful little guys.
+                                <p style={{ textAlign: "justify" }}>
+                                    WELCOME TO THE FREAKY ZONE !!!111!!11!1! You have so many eager aliens ready to be taken under your care.
+                                    It's time for you to be an awesome caregiver to these delightful little guys.
 
                                     In this collection of silly minigames, mess around with a bunch of little aliens. Feed them, grab them, shake them -- anything you can dream of!
                                     Area Freaky One is a game made for the RIT IGM Roll Your Fate Game Jam 2025.
                                 </p>
 
                                 <a href="https://macarenzle.itch.io/area-freaky-one" className="project-link" target="_blank">
-                                    Play it on itch.io!
+                                    Play it on itch.io!↗
                                 </a>
                             </div>
                         </article>
@@ -162,46 +163,26 @@ function App() {
                                 <h3>Platform Piracy</h3>
 
                                 <div className="project-tags">
-                                    <span className="tag-teal">Game Design</span>
+                                    <span className="tag-purple">Audio Design</span>
                                     <span className="tag-gold">Gameplay Programming</span>
-                                    <span className="tag-peach"> Rapid Prototyping</span>
+                                    <span className="tag-green"> Rapid Prototyping</span>
                                 </div>
 
-                                <p>
-                                   In the year 2026, Activision-Blizzard-EA-Ubisoft-Nintendo-Microsoft-Sony (ABEAUNMS) has patented the idea of video games - and every mechanic therein. Those who want to play must spend incredible amounts of money and submit to this unfair system. You play as a piracy disk on a quest to retake games for the people. Collect patents to use their abilities and fight against THE Megacorp!
+                                <p style={{ textAlign: "justify" }}>
+                                    In the year 2026, Activision-Blizzard-EA-Ubisoft-Nintendo-Microsoft-Sony (ABEAUNMS) has patented the idea of video games -
+                                    and every mechanic therein. Those who want to play must spend incredible amounts of money and submit to this unfair system.
+                                    You play as a piracy disk on a quest to retake games for the people. Collect patents to use their abilities and fight against
+                                    THE Megacorp!
                                 </p>
 
                                 <a href="https://bluemane.itch.io/platform-piracy" className="project-link" target="_blank">
-                                    Play it on itch.io!
+                                    Download it from itch.io!↗
                                 </a>
                             </div>
                         </article>
                         <article className="project-card">
                             <div className="project-image">
-                                {/*<img src="/ooga-booga.png" alt="" className="project-thumbnail"/>*/}
-                            </div>
-
-                            <div className="project-content">
-                                <h3>Overfished!</h3>
-
-                                <div className="project-tags">
-                                    <span className="tag-teal">Game Design</span>
-                                    <span className="tag-gold">Board Game Development</span>
-                                    <span className="tag-peach">Prototyping</span>
-                                </div>
-
-                                <p>
-                                    Technically a SERIOUS game.
-                                </p>
-
-                                <a href="#contact" className="project-link">
-                                    Read More
-                                </a>
-                            </div>
-                        </article>
-                        <article className="project-card">
-                            <div className="project-image">
-                                {/*<img src="/ooga-booga.png" alt="" className="project-thumbnail"/>*/}
+                                {<img src="/squeaksquawk.PNG" alt="An exploding squirrel says 'Aw Nuts' as it faces off against the capybara boss." className="project-thumbnail"/>}
                             </div>
 
                             <div className="project-content">
@@ -209,22 +190,24 @@ function App() {
 
                                 <div className="project-tags">
                                     <span className="tag-teal">Game Design</span>
-                                    <span className="tag-gold">Board Game Development</span>
-                                    <span className="tag-peach">Prototyping</span>
+                                    <span className="tag-gold">TTRPG Design</span>
+                                    <span className="tag-green">Rapid Prototyping</span>
                                 </div>
 
-                                <p>
-                                    Ooga Booga game where you caveperson and become chief. You chief when have all rock. Rock make head no round. Head round good. Make everyone else head not round and be chief.
+                                <p style={{ textAlign: "justify" }}>
+                                    <b>You are a rodent.</b> Your life starts, and ends, with a bang. Regardless of the amount of compassion or malice, you will inevitably meet your end in a blaze of glory (with an optional squeak of varying volume). Rodents live simple lives by the grace of the great capybara, whom they will all one day meet, in death or in glory. <br/>
+                                    <b>Your Goal.</b> Kill the despicable squawking sacks of feathers that keep stealing your seeds from the rodent feeders, then god for this injustice.<br/>
+                                    Squeak or Squawk is a one-page Tabletop Role-Playing Game where all you need to play is a set of dice and a few friends.
                                 </p>
 
-                                <a href="https://cryonicstrider.itch.io/squeak-or-squawk" className="project-link">
-                                    Download from itch.io
+                                <a href="https://cryonicstrider.itch.io/squeak-or-squawk" className="project-link" target="_blank">
+                                    Download from itch.io↗
                                 </a>
                             </div>
                         </article>
                         <article className="project-card">
                             <div className="project-image">
-                                {/*<img src="/ooga-booga.png" alt="" className="project-thumbnail"/>*/}
+                                <img src="/firmament.png" alt="" className="project-thumbnail"/>
                             </div>
 
                             <div className="project-content">
@@ -232,16 +215,50 @@ function App() {
 
                                 <div className="project-tags">
                                     <span className="tag-teal">Game Design</span>
-                                    <span className="tag-gold">Board Game Development</span>
-                                    <span className="tag-peach">Prototyping</span>
+                                    <span className="tag-gold">TTRPG Design</span>
+                                    <span className="tag-purple">Production</span>
                                 </div>
 
-                                <p>
-                                    Ooga Booga game where you caveperson and become chief. You chief when have all rock. Rock make head no round. Head round good. Make everyone else head not round and be chief.
+                                <p style={{ textAlign: "justify" }}>
+                                    In a distant future – a time of mechs and magic – the fate of the galaxy seems bright.
+                                    Firmament is a sci-fi Tabletop Role Playing Game about mechs and their pilots, where players take on the role of a mech pilot:
+                                    someone with the exceptional magical potential required to power one of the most advanced machines ever created.
+                                    In Firmament, creativity and the choices of players are key. It focuses heavily on description and storytelling through your actions.
+                                    In most situations, fighting isn’t the only answer.
+                                    So, what is Firmament about? It’s about daring excursions into the most hostile territory in the galaxy.
+                                    It’s about high-octane mech races across planets covered in one massive metropolis.
+                                    It’s about rescuing asteroid miners from zero-g cave-ins.
+                                    It’s about swaying interstellar politicians to your side at luxurious galas.<br/>
+                                    It's about a players creativity, and the stories they want to tell.
                                 </p>
 
                                 <a href="#contact" className="project-link">
                                     Read More
+                                </a>
+                            </div>
+                        </article>
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img src="/ooga-booga.png" alt="" className="project-thumbnail"/>
+                            </div>
+
+                            <div className="project-content">
+                                <h3>Refusal of the Call</h3>
+
+                                <div className="project-tags">
+                                    <span className="tag-blue">Narrative Design</span>
+                                    <span className="tag-purple">Foley</span>
+                                    <span className="tag-gold">Video Editing</span>
+                                </div>
+
+                                <p style={{ textAlign: "justify" }}>
+                                    "Refusal of the Call" is a minute long short film that has a mysterious end.
+                                    It was taken up as a project to help learn and practice foley. Every sound you hear was recorded, edited, and arranged by me.
+                                    The movie was also starred in, edited and recorded by me.
+                                </p>
+
+                                <a href="https://youtu.be/0hycdoyfejg?si=pVb1rDakBv0NW05F" className="project-link" target="_blank">
+                                    Watch it on YouTube!↗
                                 </a>
                             </div>
                         </article>
