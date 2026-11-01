@@ -69,7 +69,7 @@ function App() {
                     <a href="#about">
                         About
                     </a>
-                    <a href="/contact">
+                    <a href="#contact">
                         Contact
                     </a>
                     <a href="/resume.pdf" target="_blank" rel="noreferrer">
@@ -77,7 +77,7 @@ function App() {
                     </a>
                 </nav>
             </header>
-
+            <div id = "top"></div>
             <main>
                 <section className="hero">
                     <p className="name">
@@ -370,13 +370,56 @@ function App() {
                 </section>
                 <section id="about" className="section">
                     <h2>About Me</h2>
-                    <p>Intro paragraph</p>
+                    <p>Hey! I'm <b>Vignesh Muralidharan.</b> I'm a game designer, programmer, voice actor, and musician. With a background in Computer Science and Engineering,
+                        I've had the opportunity to explore a variety of fields in my pursuit of creating meaningful experiences and solutions.
+                        I've always been curious about the world around me and enjoy expanding my knowledge,
+                        picking up new skills, and exploring different ways of approaching a problem.
+                        I'm particularly drawn to creating things that evoke emotion,
+                        whether through music, games or anything else that helps bring ideas to life.
+                        I strive to carry that curiosity into everything I create. </p>
                 </section>
 
-                <section id="contact" className="section">
-                    <h2>Contact</h2>
-                    <p>contact information</p>
+                <section id="contact" className="section contact-section">
+                    <div className="contact-content">
+                        <div className="contact-intro">
+                            <h2>Contact Me</h2>
+                            <p>
+                                Have an opportunity to share? 
+                                Want to talk about something
+                                I've worked on? I'd love to hear from you.
+                            </p>
+                        </div>
+
+                        <div className="contact-details">
+                            <span className="contact-label">SEND ME AN EMAIL</span>
+                            <a className="contact-email" href="mailto:vigneshmuralidharan40@gmail.com">vigneshmuralidharan40@gmail.com<span>↗</span></a>
+
+                            <div className="contact-socials">
+                                Check out my Socials:
+                                <a href="https://github.com/vignesh-muralidharan/" target="_blank" rel="noreferrer">GitHub</a>
+                                <a href="https://www.linkedin.com/in/mvignesh42/" target="_blank" rel="noreferrer">LinkedIn</a>
+                                <a href="https://cryonicstrider.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+                            </div>
+                        </div>
+                    </div>
                 </section>
+
+                <footer className="site-footer">
+                    <div className="footer-top">
+                        <span className="footer-name">Vignesh Muralidharan</span>
+
+                        <div className="footer-socials">
+                            <a href="https://github.com/vignesh-muralidharan/" target="_blank" rel="noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/in/mvignesh42/" target="_blank" rel="noreferrer">LinkedIn</a>
+                            <a href="https://cryonicstrider.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
+                        </div>
+                    </div>
+
+                    <div className="footer-bottom">
+                        <span>© 2026 Vignesh Muralidharan. All rights reserved.</span>
+                        <a href="#top">Back to top ↑</a>
+                    </div>
+                </footer>
             </main>
         </>
     )
