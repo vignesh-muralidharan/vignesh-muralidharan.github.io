@@ -1,6 +1,64 @@
 
 import './App.css'
+import { useState, useEffect } from 'react';
+
+const projects = [
+    {
+        title: "Liminality",
+        description: "A game I made during my undergrad to learn Pygame, built entirely in code.",
+        image: "/liminality.png",
+        tags: ["tag-teal", "tag-green", "tag-gold"],
+        tagNames: ["Game Design", "Programming", "Pygame"],
+    },
+    {
+        title: "Dr. Clueblin, QC",
+        description: "A top-down, grid-based puzzle game where you play a goblin detective searching for his lost sister.",
+        image: "/dr-clueblin-flyer.png",
+        tags: ["tag-teal", "tag-green", "tag-purple"],
+        tagNames: ["Game Design", "Programming", "Audio Design"],
+    },
+    {
+        title: "Area Freaky One",
+        description: "A collection of silly minigames where you take care of a bunch of delightful little aliens.",
+        image: "/area-f1.png",
+        tags: ["tag-teal", "tag-gold", "tag-peach"],
+        tagNames: ["Game Design", "Gameplay Programming", "Audio Production"],
+    },
+    {
+        title: "Refusal of the Call",
+        description: "A short film created to practice Foley. Every sound was recorded, edited, and arranged by me.",
+        image: "/refusalofcall.jpg",
+        tags: ["tag-blue", "tag-purple", "tag-gold"],
+        tagNames: ["Narrative Design", "Foley", "Video Editing"],
+    },
+];
+
 function App() {
+
+    const [activeProject, setActiveProject] = useState(0);
+    useEffect(() => {
+        const timer = setInterval(() => {
+            setActiveProject((current) => (current + 1) % projects.length);
+        }, 5000);
+
+        return () => clearInterval(timer);
+    }, []);
+
+    const featured = projects[activeProject];
+
+    const otherProjects = projects
+        .map((project, index) => ({ ...project, index }))
+        .filter((project) => project.index !== activeProject);
+
+    function nextProject() {
+        setActiveProject((activeProject + 1) % projects.length);
+    }
+
+    function previousProject() {
+        setActiveProject(
+            (activeProject - 1 + projects.length) % projects.length
+        );
+    }
     return (
         <>
             <header className="site-header">
@@ -32,16 +90,62 @@ function App() {
                         I'm a creative working in Game Design, Composition, and Voice Acting!
                     </p>
                 </section>
-                <section id="work" className="section">
-                    <h2>
-                        Selected Work
-                    </h2>
-                    <p>
-                        PICK A FEW
-                    </p>
-                    <a className="work-link" href="#work">
+                <section className="featured-section">
+                    <div className="section-heading">
+                        <p className="section-label">A selection of my work</p>
+                        <h2>Featured Projects</h2>
+                    </div>
+
+                    <div className="featured-main">
+                        <div className="featured-image">
+                            <img src={featured.image} alt={featured.title} />
+                        </div>
+
+                        <div className="featured-details">
+                            <h3>{featured.title}</h3>
+                            <p>{featured.description}</p>
+
+                            <div className="project-tags">
+                                {featured.tagNames.map((tag, index) => (
+                                    <span className={featured.tags[index]} key={tag}>
+                                        {tag}
+                                    </span>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
+
+                    <div className="featured-thumbnails">
+                        {otherProjects.map((project) => (
+                            <button
+                                className="featured-thumbnail"
+                                key={project.index}
+                                onClick={() => setActiveProject(project.index)}
+                            >
+                                <img src={project.image} alt="" />
+                                <span>{project.title}</span>
+                            </button>
+                        ))}
+                    </div>
+                    <div className="carousel-controls">
+                        <button onClick={previousProject} aria-label="Previous project">
+                            ←
+                        </button>
+
+                        <span>
+                            {String(activeProject + 1).padStart(2, '0')} / 04
+                        </span>
+
+                        <button onClick={nextProject} aria-label="Next project">
+                            →
+                        </button>
+                    </div>
+
+                    <div className="work-link-container">
+                    <a textAlign="center" className="work-link" href="#work">
                         Explore my work!
-                    </a> 
+                        </a> 
+                    </div>
                 </section>
                 <section id="work" className="section">
                     <p className="eyebrow">
