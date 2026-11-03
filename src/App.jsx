@@ -1,6 +1,7 @@
 
 import './App.css'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useRef } from 'react';
+
 
 const projects = [
     {
@@ -11,18 +12,19 @@ const projects = [
         tagNames: ["Game Design", "Programming", "Pygame"],
     },
     {
-        title: "Dr. Clueblin, QC",
-        description: "A top-down, grid-based puzzle game where you play a goblin detective searching for his lost sister.",
-        image: "/dr-clueblin-flyer.png",
-        tags: ["tag-teal", "tag-green", "tag-purple"],
-        tagNames: ["Game Design", "Programming", "Audio Design"],
+        title: "Redshift",
+        description: `Redshift is a short psychological narrative horror game where you close your eyes to reveal a hidden layer of reality, 
+        the REDSHIFT. You are a field technician sent to an abandoned research facility. Your objective? Find out why it's begun outputting power, all on its own.`,
+        image: "/redshift.jpg",
+        tags: ["tag-teal", "tag-purple", "tag-gold"],
+        tagNames: ["Game Design", "Audio Design", "Level Design"],
     },
     {
-        title: "Area Freaky One",
-        description: "A collection of silly minigames where you take care of a bunch of delightful little aliens.",
-        image: "/area-f1.png",
-        tags: ["tag-teal", "tag-gold", "tag-peach"],
-        tagNames: ["Game Design", "Gameplay Programming", "Audio Production"],
+        title: "Firmament",
+        description: "In a distant future – a time of mechs and magic – the fate of the galaxy seems bright. Firmament is a sci-fi Tabletop Role Playing Game about mechs and their pilots, where players take on the role of a mech pilot: someone with the exceptional magical potential required to power one of the most advanced machines ever created.In Firmament, creativity and the choices of players are key. It focuses heavily on description and storytelling through your actions.In most situations, fighting isn’t the only answer. So, what is Firmament about ? It’s about daring excursions into the most hostile territory in the galaxy. It’s about high - octane mech races across planets covered in one massive metropolis. It’s about rescuing asteroid miners from zero-g cave-ins. It’s about swaying interstellar politicians to your side at luxurious galas.\n It's about a players creativity, and the stories they want to tell. \n\nI produced this project, and worked on many of the game mechanics within.",
+        image: "/firmament.png",
+        tags: ["tag-teal", "tag-gold", "tag-purple"],
+        tagNames: ["Game Design", "TTRPG Design", "Production"],
     },
     {
         title: "Refusal of the Call",
@@ -36,28 +38,39 @@ const projects = [
 function App() {
 
     const [activeProject, setActiveProject] = useState(0);
-    useEffect(() => {
-        const timer = setInterval(() => {
+    const timerRef = useRef(null);
+
+    function resetTimer() { 
+        clearInterval(timerRef.current);
+        timerRef.current = setInterval(() => {
             setActiveProject((current) => (current + 1) % projects.length);
         }, 5000);
+    }
+    
+    useEffect(() => {
+        resetTimer();
 
-        return () => clearInterval(timer);
+        return () => clearInterval(timerRef.current);
     }, []);
 
     const featured = projects[activeProject];
 
     const otherProjects = projects
-        .map((project, index) => ({ ...project, index }))
-        .filter((project) => project.index !== activeProject);
+        .map((_, i) => (activeProject + i) % projects.length)
+        .filter((index) => index !== activeProject)
+        .map((index) => ({
+            ...projects[index],
+            index,
+        }));
 
     function nextProject() {
         setActiveProject((activeProject + 1) % projects.length);
+        resetTimer();
     }
 
     function previousProject() {
-        setActiveProject(
-            (activeProject - 1 + projects.length) % projects.length
-        );
+        setActiveProject((activeProject - 1 + projects.length) % projects.length);
+        resetTimer();
     }
     return (
         <>
@@ -152,13 +165,39 @@ function App() {
                         A Comprehensive List of My Work
                     </p>
                     <h2>
-                        My Work
+                        Projects
                     </h2>
                     <p className="section-intro">
                         Here is a comprehensive list of everything I have had a hand in making thus far! <br/>Many of these projects show my versatility and capability to work in different disciplines.
                     </p>
 
                     <div className="project-grid">
+                        <article className="project-card">
+                            <div className="project-image">
+                                <img src="/redshift.jpg" alt="Header Image from Steam" className="project-thumbnail" />
+                            </div>
+
+                            <div className="project-content">
+                                <h3>Redshift</h3>
+
+                                <div className="project-tags">
+                                    <span className="tag-teal">Game Design</span>
+                                    <span className="tag-purple">Audio Design</span>
+                                    <span className="tag-gold">Level Design</span>
+                                </div>
+
+                                <p style={{ textAlign: "justify" }}>
+                                    Redshift is a short psychological narrative horror game where you close your eyes to reveal a hidden layer of reality, the REDSHIFT.
+                                    You are a field technician sent to an abandoned research facility. Your objective? Find out why it's begun outputting power, all on its own.
+
+                                    <br /><br />I contributed to this project by designing the level layouts, helping with dialogue implementation, voice acting, and helping with game design.
+                                </p>
+
+                                <a href="https://store.steampowered.com/app/3851950/REDSHIFT/" className="project-link" target="_blank">
+                                    Play it on Steam!↗
+                                </a>
+                            </div>
+                        </article>
                         <article className="project-card">
                             <div className="project-image">
                                 <img src="/liminality.png" alt="Poster of the game Liminality" className="project-thumbnail" />
@@ -174,12 +213,12 @@ function App() {
                                 </div>
 
                                 <p style={{ textAlign: "justify" }}>
-                                    A game I made in my undergrad to learn pygame. The game was made entirely in code, using free sprite sheets and basic created images.
+                                    A game I made in my undergrad to learn pygame. The game was made entirely in code, using free sprite sheets and basic created images. 
                                 </p>
 
-                                <a href="#contact" className="project-link">
+                                {/*<a href="#contact" className="project-link">
                                     Read More
-                                </a>
+                                </a>*/}
                             </div>
                         </article>
 
@@ -199,6 +238,7 @@ function App() {
 
                                 <p style={{ textAlign: "justify" }}>
                                     Dr. Clueblin, QC is a top-down, grid-based puzzle game where you play a goblin detective searching for his lost sister.
+                                    <br /><br />I contributed to this project as the primary developer, and designed systems that allowed level designers to design without ever needing to enter the engine. I also composed music for the game.
                                 </p>
 
                                 <a href="https://macarenzle.itch.io/dr-clueblin-qc" className="project-link" target="_blank">
@@ -224,11 +264,13 @@ function App() {
                                 <p style={{ textAlign: "justify" }}>
                                     Ooga Booga game where you caveperson and become chief. You chief when have all rock.
                                     Rock make head no round. Head round good. Make everyone else head not round and be chief.
+
+                                    <br /><br /> I help project by making game good game by inspect rock. I make many design.
                                 </p>
 
-                                <a href="#contact" className="project-link">
+                                {/*<a href="#contact" className="project-link">
                                     Read More
-                                </a>
+                                </a>*/}
                             </div>
                         </article>
                         <article className="project-card">
@@ -251,6 +293,8 @@ function App() {
 
                                     In this collection of silly minigames, mess around with a bunch of little aliens. Feed them, grab them, shake them -- anything you can dream of!
                                     Area Freaky One is a game made for the RIT IGM Roll Your Fate Game Jam 2025.
+
+                                    <br /><br />I contributed to this project by being part of the development team, creating minigames as well as composing and editing music and sound effects for the game.
                                 </p>
 
                                 <a href="https://macarenzle.itch.io/area-freaky-one" className="project-link" target="_blank">
@@ -277,6 +321,8 @@ function App() {
                                     and every mechanic therein. Those who want to play must spend incredible amounts of money and submit to this unfair system.
                                     You play as a piracy disk on a quest to retake games for the people. Collect patents to use their abilities and fight against
                                     THE Megacorp!
+
+                                    <br /><br/>I contributed to this project by creating enemies, working on music and sound effects, and implementing new mechanics each week of prototyping.
                                 </p>
 
                                 <a href="https://bluemane.itch.io/platform-piracy" className="project-link" target="_blank">
@@ -302,6 +348,7 @@ function App() {
                                     <b>You are a rodent.</b> Your life starts, and ends, with a bang. Regardless of the amount of compassion or malice, you will inevitably meet your end in a blaze of glory (with an optional squeak of varying volume). Rodents live simple lives by the grace of the great capybara, whom they will all one day meet, in death or in glory. <br/>
                                     <b>Your Goal.</b> Kill the despicable squawking sacks of feathers that keep stealing your seeds from the rodent feeders, then god for this injustice.<br/>
                                     Squeak or Squawk is a one-page Tabletop Role-Playing Game where all you need to play is a set of dice and a few friends.
+                                    <br/><br/>I contributed to this project by producing for the team, and helping with design.
                                 </p>
 
                                 <a href="https://cryonicstrider.itch.io/squeak-or-squawk" className="project-link" target="_blank">
@@ -324,20 +371,20 @@ function App() {
                                 </div>
 
                                 <p style={{ textAlign: "justify" }}>
-                                    In a distant future – a time of mechs and magic – the fate of the galaxy seems bright.
+                                    "In a distant future – a time of mechs and magic – the fate of the galaxy seems bright.
                                     Firmament is a sci-fi Tabletop Role Playing Game about mechs and their pilots, where players take on the role of a mech pilot:
-                                    someone with the exceptional magical potential required to power one of the most advanced machines ever created.
-                                    In Firmament, creativity and the choices of players are key. It focuses heavily on description and storytelling through your actions.
-                                    In most situations, fighting isn’t the only answer.
-                                    So, what is Firmament about? It’s about daring excursions into the most hostile territory in the galaxy.
-                                    It’s about high-octane mech races across planets covered in one massive metropolis.
-                                    It’s about rescuing asteroid miners from zero-g cave-ins.
-                                    It’s about swaying interstellar politicians to your side at luxurious galas.<br/>
+                                    someone with the exceptional magical potential required to power one of the most advanced machines ever created. In Firmament,
+                                    creativity and the choices of players are key. It focuses heavily on description and storytelling through your actions. In most situations, fighting isn’t the only answer.
+                                    So, what is Firmament about ? It’s about daring excursions into the most hostile territory in the galaxy.
+                                    It’s about high - octane mech races across planets covered in one massive metropolis.
+                                    It’s about rescuing asteroid miners from zero-g cave-ins. It’s about swaying interstellar politicians to your side at luxurious galas. <br/>
                                     It's about a players creativity, and the stories they want to tell.
+                                    <br></br>
+                                    <br/>I produced this project, and worked on many of the game mechanics within.
                                 </p>
 
-                                <a href="#contact" className="project-link">
-                                    Read More
+                                <a href="https://www.drivethrurpg.com/en/product/565241/Firmament--A-Magitech-Roleplaying-Game?affiliate_id=5113468" className="project-link" target="_blank">
+                                    Download it on DriveThruRPG!↗
                                 </a>
                             </div>
                         </article>
