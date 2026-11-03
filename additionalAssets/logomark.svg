@@ -1,0 +1,473 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="177.89026mm"
+   height="183.74602mm"
+   viewBox="0 0 177.89026 183.74602"
+   version="1.1"
+   id="svg1"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#505050"
+     bordercolor="#eeeeee"
+     borderopacity="1"
+     inkscape:showpageshadow="0"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#505050"
+     inkscape:document-units="mm">
+    <inkscape:page
+       x="0"
+       y="0"
+       width="177.89026"
+       height="183.74602"
+       id="page2"
+       margin="0"
+       bleed="0" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter64"
+       x="-0.16338346"
+       y="-0.17352588"
+       width="1.3790399"
+       height="1.4826189">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood63" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="8.510638"
+         id="feGaussianBlur63" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="6.534955"
+         dy="15.957447"
+         id="feOffset63" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite63" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite64" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Drop Shadow"
+       id="filter66"
+       x="-0.27494971"
+       y="-0.28305136"
+       width="1.6376033"
+       height="1.7865737">
+      <feFlood
+         result="flood"
+         in="SourceGraphic"
+         flood-opacity="0.498039"
+         flood-color="rgb(0,0,0)"
+         id="feFlood64" />
+      <feGaussianBlur
+         result="blur"
+         in="SourceGraphic"
+         stdDeviation="8.510638"
+         id="feGaussianBlur64" />
+      <feOffset
+         result="offset"
+         in="blur"
+         dx="6.534955"
+         dy="15.957447"
+         id="feOffset64" />
+      <feComposite
+         result="comp1"
+         operator="in"
+         in="flood"
+         in2="offset"
+         id="feComposite65" />
+      <feComposite
+         result="comp2"
+         operator="over"
+         in="SourceGraphic"
+         in2="comp1"
+         id="feComposite66" />
+    </filter>
+    <filter
+       inkscape:menu="Image Paint and Draw"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Litho"
+       inkscape:menu-tooltip="Create a two colors lithographic effect"
+       id="filter68"
+       x="-0.00019197556"
+       y="-0.00020389291"
+       width="1.000384"
+       height="1.0004078">
+      <feGaussianBlur
+         stdDeviation="0.01"
+         id="feGaussianBlur66" />
+      <feColorMatrix
+         values="0"
+         result="fbSourceGraphic"
+         type="hueRotate"
+         id="feColorMatrix66" />
+      <feColorMatrix
+         result="fbSourceGraphic"
+         in="fbSourceGraphic"
+         values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 50 0 "
+         id="feColorMatrix67" />
+      <feComponentTransfer
+         result="fbSourceGraphic"
+         in="fbSourceGraphic"
+         id="feComponentTransfer67">
+        <feFuncR
+           type="discrete"
+           tableValues="0 1 1"
+           id="feFuncR67" />
+        <feFuncG
+           type="discrete"
+           tableValues="0 1 1"
+           id="feFuncG67" />
+        <feFuncB
+           type="discrete"
+           tableValues="0 1 1"
+           id="feFuncB67" />
+      </feComponentTransfer>
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.07 1 0 "
+         in="fbSourceGraphic"
+         result="result1"
+         id="feColorMatrix68" />
+      <feFlood
+         flood-color="rgb(144,7,7)"
+         result="result3"
+         flood-opacity="1"
+         id="feFlood68" />
+      <feBlend
+         in2="fbSourceGraphic"
+         mode="screen"
+         in="result3"
+         result="result4"
+         id="feBlend68" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result4"
+         result="result2"
+         id="feComposite68" />
+    </filter>
+    <filter
+       inkscape:menu="Image Paint and Draw"
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Litho"
+       inkscape:menu-tooltip="Create a two colors lithographic effect"
+       id="filter71"
+       x="-0.0011463246"
+       y="-0.0011801022"
+       width="1.0022926"
+       height="1.0023602">
+      <feGaussianBlur
+         stdDeviation="0.01"
+         id="feGaussianBlur68" />
+      <feColorMatrix
+         values="0"
+         result="fbSourceGraphic"
+         type="hueRotate"
+         id="feColorMatrix69" />
+      <feColorMatrix
+         result="fbSourceGraphic"
+         in="fbSourceGraphic"
+         values="0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0.21 0.72 0.072 0 0 0 0 0 50 0 "
+         id="feColorMatrix70" />
+      <feComponentTransfer
+         result="fbSourceGraphic"
+         in="fbSourceGraphic"
+         id="feComponentTransfer70">
+        <feFuncR
+           type="discrete"
+           tableValues="0 1 1"
+           id="feFuncR70" />
+        <feFuncG
+           type="discrete"
+           tableValues="0 1 1"
+           id="feFuncG70" />
+        <feFuncB
+           type="discrete"
+           tableValues="0 1 1"
+           id="feFuncB70" />
+      </feComponentTransfer>
+      <feColorMatrix
+         values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -0.21 -0.72 -0.07 1 0 "
+         in="fbSourceGraphic"
+         result="result1"
+         id="feColorMatrix71" />
+      <feFlood
+         flood-color="rgb(144,7,7)"
+         result="result3"
+         flood-opacity="1"
+         id="feFlood71" />
+      <feBlend
+         in2="fbSourceGraphic"
+         mode="screen"
+         in="result3"
+         result="result4"
+         id="feBlend71" />
+      <feComposite
+         in2="SourceGraphic"
+         operator="in"
+         in="result4"
+         result="result2"
+         id="feComposite71" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Neon Draw"
+       id="filter102"
+       x="-0.17301721"
+       y="-0.18375767"
+       width="1.3460344"
+       height="1.3675153">
+      <feBlend
+         mode="normal"
+         result="blend"
+         id="feBlend100" />
+      <feGaussianBlur
+         in="blend"
+         stdDeviation="1.2252"
+         result="blur1"
+         id="feGaussianBlur100" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0"
+         result="color1"
+         id="feColorMatrix100" />
+      <feComponentTransfer
+         result="component1"
+         id="feComponentTransfer100">
+        <feFuncR
+           type="discrete"
+           tableValues="0 0.3 0.3 0.3 0.3 0.6 0.6 0.6 0.6 1 1"
+           id="feFuncR100" />
+        <feFuncG
+           type="discrete"
+           tableValues="0 0.3 0.3 0.3 0.3 0.6 0.6 0.6 0.6 1 1"
+           id="feFuncG100" />
+        <feFuncB
+           type="discrete"
+           tableValues="0 0.3 0.3 0.3 0.3 0.6 0.6 0.6 0.6 1 1"
+           id="feFuncB100" />
+      </feComponentTransfer>
+      <feGaussianBlur
+         in="component1"
+         stdDeviation="7.78726"
+         result="blur2"
+         id="feGaussianBlur101" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0"
+         result="color2"
+         id="feColorMatrix101" />
+      <feComponentTransfer
+         in="color2"
+         result="component2"
+         id="feComponentTransfer101">
+        <feFuncR
+           type="table"
+           tableValues="0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1"
+           id="feFuncR101" />
+        <feFuncG
+           type="table"
+           tableValues="0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1"
+           id="feFuncG101" />
+        <feFuncB
+           type="table"
+           tableValues="0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1"
+           id="feFuncB101" />
+      </feComponentTransfer>
+      <feComposite
+         in="component2"
+         in2="blur2"
+         k3="8.20669"
+         operator="arithmetic"
+         k2="1"
+         result="composite1"
+         id="feComposite101"
+         k1="0"
+         k4="0" />
+      <feComposite
+         in="composite1"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite2"
+         id="feComposite102" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Neon Draw"
+       id="filter104"
+       x="-0.29111326"
+       y="-0.29969118"
+       width="1.5822265"
+       height="1.5993824">
+      <feBlend
+         mode="normal"
+         result="blend"
+         id="feBlend102" />
+      <feGaussianBlur
+         in="blend"
+         stdDeviation="1.2252"
+         result="blur1"
+         id="feGaussianBlur102" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0"
+         result="color1"
+         id="feColorMatrix102" />
+      <feComponentTransfer
+         result="component1"
+         id="feComponentTransfer102">
+        <feFuncR
+           type="discrete"
+           tableValues="0 0.3 0.3 0.3 0.3 0.6 0.6 0.6 0.6 1 1"
+           id="feFuncR102" />
+        <feFuncG
+           type="discrete"
+           tableValues="0 0.3 0.3 0.3 0.3 0.6 0.6 0.6 0.6 1 1"
+           id="feFuncG102" />
+        <feFuncB
+           type="discrete"
+           tableValues="0 0.3 0.3 0.3 0.3 0.6 0.6 0.6 0.6 1 1"
+           id="feFuncB102" />
+      </feComponentTransfer>
+      <feGaussianBlur
+         in="component1"
+         stdDeviation="7.78726"
+         result="blur2"
+         id="feGaussianBlur103" />
+      <feColorMatrix
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 0 0 0 50 0"
+         result="color2"
+         id="feColorMatrix103" />
+      <feComponentTransfer
+         in="color2"
+         result="component2"
+         id="feComponentTransfer103">
+        <feFuncR
+           type="table"
+           tableValues="0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1"
+           id="feFuncR103" />
+        <feFuncG
+           type="table"
+           tableValues="0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1"
+           id="feFuncG103" />
+        <feFuncB
+           type="table"
+           tableValues="0 1 1 1 0 0 0 1 1 1 0 0 0 1 1 1 0 0 0 1"
+           id="feFuncB103" />
+      </feComponentTransfer>
+      <feComposite
+         in="component2"
+         in2="blur2"
+         k3="8.20669"
+         operator="arithmetic"
+         k2="1"
+         result="composite1"
+         id="feComposite103"
+         k1="0"
+         k4="0" />
+      <feComposite
+         in="composite1"
+         in2="SourceGraphic"
+         operator="in"
+         result="composite2"
+         id="feComposite104" />
+    </filter>
+  </defs>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.9957px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#2f41b7;fill-opacity:0.222581;stroke:#ffffff;stroke-width:0.122829;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill;filter:url(#filter104)"
+     x="65.162926"
+     y="105.21021"
+     id="text1-4-1"
+     transform="matrix(1.0139463,0,0,0.98624551,-20.341043,-11.731715)"><tspan
+       sodipodi:role="line"
+       id="tspan1-3-1"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.9957px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2f41b7;fill-opacity:0.222581;stroke-width:0.122829"
+       x="65.162926"
+       y="105.21021">V</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:148.167px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#2f41b7;fill-opacity:0.222581;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill;filter:url(#filter102)"
+     x="11.501302"
+     y="147.43414"
+     id="text2-1-3"><tspan
+       sodipodi:role="line"
+       id="tspan2-2-8"
+       style="fill:#2f41b7;fill-opacity:0.222581;stroke:none;stroke-width:0.2"
+       x="11.501302"
+       y="147.43414">m</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.9957px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#2f41b7;fill-opacity:0.222581;stroke:#ffffff;stroke-width:0.122829;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill;filter:url(#filter71)"
+     x="73.057327"
+     y="104.3904"
+     id="text1-4"
+     transform="matrix(1.0139463,0,0,0.98624551,-20.341043,-11.731715)"><tspan
+       sodipodi:role="line"
+       id="tspan1-3"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.9957px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#2f41b7;fill-opacity:0.222581;stroke-width:0.122829"
+       x="73.057327"
+       y="104.3904">V</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:148.167px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#2f41b7;fill-opacity:0.222581;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill;filter:url(#filter68)"
+     x="19.505789"
+     y="146.62561"
+     id="text2-1"><tspan
+       sodipodi:role="line"
+       id="tspan2-2"
+       style="fill:#2f41b7;fill-opacity:0.222581;stroke:none;stroke-width:0.2"
+       x="19.505789"
+       y="146.62561">m</tspan></text>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-20.341043,-11.731715)">
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.9957px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#1681e4;fill-opacity:1;stroke:#ffffff;stroke-width:0.122829;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill;filter:url(#filter66)"
+       x="69.387978"
+       y="105.13808"
+       id="text1"
+       transform="scale(1.0139463,0.98624553)"><tspan
+         sodipodi:role="line"
+         id="tspan1"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:90.9957px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#1681e4;fill-opacity:1;stroke-width:0.122829"
+         x="69.387978"
+         y="105.13808">V</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:148.167px;font-family:'LEMON MILK';-inkscape-font-specification:'LEMON MILK, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;writing-mode:lr-tb;direction:ltr;fill:#47008b;fill-opacity:1;stroke:none;stroke-width:0.2;stroke-linecap:round;stroke-linejoin:round;paint-order:markers stroke fill;filter:url(#filter64)"
+       x="36.126316"
+       y="159.09474"
+       id="text2"><tspan
+         sodipodi:role="line"
+         id="tspan2"
+         style="fill:#47008b;fill-opacity:1;stroke:none;stroke-width:0.2"
+         x="36.126316"
+         y="159.09474">m</tspan></text>
+  </g>
+</svg>
