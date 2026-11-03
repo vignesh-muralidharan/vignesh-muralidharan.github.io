@@ -15,7 +15,7 @@ const projects = [
         title: "Redshift",
         description: `Redshift is a short psychological narrative horror game where you close your eyes to reveal a hidden layer of reality, 
         the REDSHIFT. You are a field technician sent to an abandoned research facility. Your objective? Find out why it's begun outputting power, all on its own.`,
-        image: "/redshift.jpg",
+        image: "/redshift.png",
         tags: ["tag-teal", "tag-purple", "tag-gold"],
         tagNames: ["Game Design", "Audio Design", "Level Design"],
     },
@@ -174,7 +174,7 @@ function App() {
                     <div className="project-grid">
                         <article className="project-card">
                             <div className="project-image">
-                                <img src="/redshift.jpg" alt="Header Image from Steam" className="project-thumbnail" />
+                                <img src="/redshift.png" alt="Header Image from Steam" className="project-thumbnail" />
                             </div>
 
                             <div className="project-content">
