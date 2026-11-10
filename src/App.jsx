@@ -1,16 +1,9 @@
 
 import './App.css'
-import { useState, useEffect, useRef } from 'react';
+import { useState} from 'react';
 
 
 const projects = [
-    {
-        title: "Liminality",
-        description: "A game I made during my undergrad to learn Pygame, built entirely in code.",
-        image: "/liminality.png",
-        tags: ["tag-teal", "tag-green", "tag-gold"],
-        tagNames: ["Game Design", "Programming", "Pygame"],
-    },
     {
         title: "Redshift",
         description: `Redshift is a short psychological narrative horror game where you close your eyes to reveal a hidden layer of reality, 
@@ -38,26 +31,12 @@ const projects = [
 function App() {
 
     const [activeProject, setActiveProject] = useState(0);
-    const timerRef = useRef(null);
-
-    function resetTimer() { 
-        clearInterval(timerRef.current);
-        timerRef.current = setInterval(() => {
-            setActiveProject((current) => (current + 1) % projects.length);
-        }, 5000);
-    }
-    
-    useEffect(() => {
-        resetTimer();
-
-        return () => clearInterval(timerRef.current);
-    }, []);
+   
 
     const featured = projects[activeProject];
 
     const otherProjects = projects
-        .map((_, i) => (activeProject + i) % projects.length)
-        .filter((index) => index !== activeProject)
+        .map((_, i) => (i))
         .map((index) => ({
             ...projects[index],
             index,
@@ -65,12 +44,11 @@ function App() {
 
     function nextProject() {
         setActiveProject((activeProject + 1) % projects.length);
-        resetTimer();
+
     }
 
     function previousProject() {
         setActiveProject((activeProject - 1 + projects.length) % projects.length);
-        resetTimer();
     }
     return (
         <>
@@ -97,11 +75,21 @@ function App() {
                         Vignesh Muralidharan
                     </p>
                     <p className="eyebrow">
-                        GAME DESIGN | MUSIC | VOICE ACTING
+                        GAMEPLAY PROGRAMMING | MUSIC | VOICE ACTING
                     </p>
                     <p className="intro">
-                        I'm a creative working in Game Design, Composition, and Voice Acting!
+                        I'm a Gameplay Programmer, Audio Designer and Voice Actor.
                     </p>
+                </section>
+                <section id="about" className="section">
+                    <h2>About Me</h2>
+                    <p>Hey! I'm <b>Vignesh Muralidharan.</b> I'm a game designer, programmer, voice actor, and musician. With a background in Computer Science and Engineering,
+                        I've had the opportunity to explore a variety of fields in my pursuit of creating meaningful experiences and solutions.
+                        I've always been curious about the world around me and enjoy expanding my knowledge,
+                        picking up new skills, and exploring different ways of approaching a problem.
+                        I'm particularly drawn to creating things that evoke emotion,
+                        whether through music, games or anything else that helps bring ideas to life.
+                        I strive to carry that curiosity into everything I create. </p>
                 </section>
                 <section className="featured-section">
                     <div className="section-heading">
@@ -146,7 +134,7 @@ function App() {
                         </button>
 
                         <span>
-                            {String(activeProject + 1).padStart(2, '0')} / 04
+                            {String(activeProject + 1).padStart(2, '0')} / 03
                         </span>
 
                         <button onClick={nextProject} aria-label="Next project">
@@ -415,16 +403,6 @@ function App() {
                         </article>
                     </div>
                 </section>
-                <section id="about" className="section">
-                    <h2>About Me</h2>
-                    <p>Hey! I'm <b>Vignesh Muralidharan.</b> I'm a game designer, programmer, voice actor, and musician. With a background in Computer Science and Engineering,
-                        I've had the opportunity to explore a variety of fields in my pursuit of creating meaningful experiences and solutions.
-                        I've always been curious about the world around me and enjoy expanding my knowledge,
-                        picking up new skills, and exploring different ways of approaching a problem.
-                        I'm particularly drawn to creating things that evoke emotion,
-                        whether through music, games or anything else that helps bring ideas to life.
-                        I strive to carry that curiosity into everything I create. </p>
-                </section>
 
                 <section id="contact" className="section contact-section">
                     <div className="contact-content">
@@ -452,15 +430,6 @@ function App() {
                 </section>
 
                 <footer className="site-footer">
-                    <div className="footer-top">
-                        <span className="footer-name">Vignesh Muralidharan</span>
-
-                        <div className="footer-socials">
-                            <a href="https://github.com/vignesh-muralidharan/" target="_blank" rel="noreferrer">GitHub</a>
-                            <a href="https://www.linkedin.com/in/mvignesh42/" target="_blank" rel="noreferrer">LinkedIn</a>
-                            <a href="https://cryonicstrider.itch.io/" target="_blank" rel="noreferrer">itch.io</a>
-                        </div>
-                    </div>
 
                     <div className="footer-bottom">
                         <span>© 2026 Vignesh Muralidharan. All rights reserved.</span>
